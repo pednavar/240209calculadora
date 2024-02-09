@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function sumar(num1, num2) {
+         alert("El resultado de la suma es = " + (parseInt(num1) + parseInt(num2)));
+        }
+        function restar(num1, num2) {
+         alert("El resultado de la resta es = " + (parseInt(num1) - parseInt(num2)));
+        }
+        function multiplicar(num1, num2) {
+         alert("El resultado de la multiplicación es = " + (parseInt(num1) * parseInt(num2)));
+        }
+        function dividir(num1, num2){
+         alert("El resultado de la división es = " + (parseInt(num1) / parseInt(num2)));
+        }
+        let operacion = prompt("Que operación deseas realizar. 1.Suma/2.Resta/3.Multiplica/4.Divide").toLowerCase();
+        if (operacion == "1" ) {
+         let operador1 = prompt("Introduce la primera cifra a sumar");
+         let operador2 = prompt("Introduce la segunda cifra a sumar");
+         sumar(operador1, operador2);
+        }
+        else if (operacion == "2" ) {
+            let operador1 = prompt("Introduce la primera cifra a restar");
+            let operador2 = prompt("Introduce la segunda cifra a restar");
+         restar(operador1, operador2);
+        }
+        else if (operacion == "3" ) {
+            let operador1 = prompt("Introduce la primera cifra a multiplicar");
+            let operador2 = prompt("Introduce la segunda cifra a multiplicar");
+         multiplicar(operador1, operador2);
+        }
+        else if (operacion == "4" ) {
+            let operador1 = prompt("Introduce la primera cifra a dividir");
+            let operador2 = prompt("Introduce la segunda cifra a dividir");
+         dividir(operador1, operador2);
+        }
+        else {
+         alert("Operación no contemplada");
+        }
+       </script>
+</head>
+<body>
+    
+</body>
+</html>
